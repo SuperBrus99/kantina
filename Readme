@@ -1,1 +1,4 @@
-Jeg vet ikke hva jeg skal skrive her
+Om koden
+
+Prosjektet er en Flask-applikasjon der app.py starter webserveren og definerer rutene. 
+Foreløpig finnes én rute (/) som viser forsiden. HTML-sidene ligger i templates/ og bruker Jinja2-arv: base.html inneholder felles oppsett som header, navigasjon og footer, og index.html fyller inn sitt eget innhold. Stilarket ligger i static/css/style.css.

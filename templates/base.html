@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Kantine{% endblock %}</title>
+    <title>{% block title %}Kantina{% endblock %}</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
     <header>
-        <h1><a href="{{ url_for('index') }}">Kantine</a></h1>
+        <h1><a href="{{ url_for('index') }}">Kantina</a></h1>
         <nav>
-            <a href="{{ url_for('index') }}">Kontakt</a>
+            <a class="knapp" href="{{ url_for('meny') }}">Se menyen</a>
+            <a href="{{ url_for('kontakt') }}">Kontakt oss</a>
         </nav>
     </header>
 
@@ -19,7 +20,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Kantine</p>
+        <p>&copy; 2026 Kantina</p>
     </footer>
+
+    {% block ekstra %}{% endblock %}
 </body>
 </html>

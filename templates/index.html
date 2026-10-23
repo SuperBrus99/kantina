@@ -3,6 +3,10 @@
 {% block title %}Hjem - Kantina{% endblock %}
 
 {% block content %}
-    <h2>Hello, Kantine!</h2>
-    <p>Dette er en kantine.</p>
+    <h2>Hello, Kantina!</h2>
+    <p>Dette er en kantina.</p>
+{% endblock %}
+
+{% block hemmelig %}
+    <a class="gjemt-knapp" href="{{ url_for('svartebøs') }}" aria-label="Hemmelig side">•</a>
 {% endblock %}
